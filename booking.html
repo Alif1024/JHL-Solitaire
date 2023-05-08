@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/booking.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- logo page -->
+    <link rel="icon" href="img/logo1.png" type="image/x-icon"> 
+
+    <title>Booking</title>
+
+</head>
+<body style="background: #f2f2f2;">
+
+    <!-- header section start -->
+
+        <header>
+            
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <nav class="nb">
+                <a href="index.html">Home</a>
+                <a class="active" href="booking.html">Booking</a>
+                <a href="room.html">room</a>
+                <a href="facilities.html">facilities</a>
+                <a href="contactUs.html">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+            </div> 
+            
+        </header>
+
+    <!-- header section end -->
+
+
+
+
+    <!-- section start -->
+
+        <section class="review" id="review" style="margin-top: 14rem;">
+
+            <div class="review-heading">
+            <h3> JHL Solitaire </h3>
+            <h1>Book a Room</h1>
+            </div>
+            
+            <form action="">
+        
+            <div class="input form-group">
+                <span>Your Name</span>
+                <input type="text" name="" id="" placeholder="enter your name" class="" >
+                <span>Your Email</span>
+                <input type="email" name="" id="" placeholder="enter your email" class="" >  
+                <span>Your Phone</span>
+                <input type="tel" name="" id="" placeholder="enter your phone number" class="" > 
+                <span>Room Type</span>
+                <div class="dropdown">  
+                    <input type="text" class="textBox" placeholder="Choose Room Type" readonly>
+                    <div class="option">
+                        <div onclick="show('Premier Room')">Premier Room</div>
+                        <div onclick="show('Premier Accessible Room')">Premier Accessible Room</div>
+                        <div onclick="show('Executive Club')">Executive Club</div>
+                        <div onclick="show('Junior Suite')">Junior Suite</div>
+                        <div onclick="show('Executive Suite')">Executive Suite</div>
+                        <div onclick="show('Solitaire Signature Suite')">Solitaire Signature Suite</div>
+                        <div onclick="show('Chairman Suite Room')">Chairman Suite Room</div>
+                    </div>
+                </div>
+                <span>Check In Date</span>
+                <input type="date" name="" id="" placeholder="enter your check in date" class="" >  
+                <span>Check Out Date</span>
+                <input type="date" name="" id="" placeholder="enter your check out date" class="" >  
+                <span>Number of Adult</span>
+                <input type="number" name="" id="" placeholder="enter your number of adult" class="" >  
+                <span>Number of Children</span>
+                <input type="number" name="" id="" placeholder="enter your number of children" class="" >  
+                <span>User Notes</span>
+                <textarea name="" id="" placeholder="enter your message" cols="30" rows="10" class=""></textarea>
+            </div>
+            <button type="reset" class="btn btn-warning text-white fw-bold">Cancel</button>
+            <button type="submit" class="btn btn-warning text-white fw-bold">Send</button>
+        
+            </form>
+            
+        
+        </section>
+    
+    <!-- section end -->
+
+
+
+
+    <!-- footer start -->
+        <div class="container2">
+
+        </div>
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="row-footer">
+                    <div class="footer-col">
+                        <h4 class="fw-bold">LAYANAN PELANGGAN</h4>
+                        <ul>
+                            <li>Pusat Bantuan</li>
+                            <li>Cara Pemesanan</li>
+                            <li>Cara Pembayaran</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="fw-bold">CONTACT US</h4>
+                        <ul>
+                            <li>+62 21 3950 3000</li>
+                            <li>info.sgs@jhlcollections.com</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="fw-bold">CONNECT WITH US</h4>
+                        <ul>
+                            <li><a href="" class="text-white ">Facebook</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="fw-bold">LOCATION</h4>
+                        <ul>
+                            <li>Jl. Gading Serpong Boulevard Barat Blok S No.5 Gading Serpong Tangerang, Banten Indonesia 15810</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- footer end -->
+
+    <!-- copyright start -->
+
+        <div class="copyright">
+
+            <p>Developed by Group 12 - 4PHP52 Copyright <i class="far-fa-copyright"></i> 2023</p>
+
+        </div>
+
+    <!-- copyright end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script>
+        function show(anything){
+            document.querySelector('.textBox').value = anything;
+        }
+
+        let dropdown = document.querySelector('.dropdown');
+        dropdown.onclick = function() {
+            dropdown.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
